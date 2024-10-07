@@ -10,3 +10,19 @@ module.exports = ({ env }) => ({
     },
   },
 });
+
+// config/plugins.js
+
+module.exports = ({ env }) => ({
+  email: {
+    provider: 'gmail',
+    providerOptions: {
+      username: env('GMAIL_USER'),
+      password: env('GMAIL_PASSWORD'),
+    },
+    settings: {
+      defaultFrom: 'Quickstaff2024@gmail.com',
+      defaultReplyTo: 'Quickstaff2024@gmail.com',
+    },
+  },
+});

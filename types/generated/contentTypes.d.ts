@@ -884,7 +884,17 @@ export interface ApiProductProduct extends Schema.CollectionType {
     description: Attribute.Text;
     image: Attribute.Media<'images'> & Attribute.Required;
     category: Attribute.Enumeration<
-      ['tshirt', 'mug', 'hoodie', 'stickers', 'gloves']
+      [
+        'tshirt',
+        'mug',
+        'hoodie',
+        'stickers',
+        'gloves',
+        'trimmer',
+        'bedsheet',
+        'cycle',
+        'bucket'
+      ]
     > &
       Attribute.Required &
       Attribute.DefaultTo<'tshirt'>;
